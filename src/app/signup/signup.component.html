@@ -1,0 +1,11 @@
+
+<form (ngSubmit)="signin(signinForm.value)" [formGroup]="signinForm">
+  <h2>SignUp.</h2>
+  <label for="email">Email:</label>
+  <input type="email" name="email" formControlName="email">
+
+  <label for="password">Password:</label>
+  <input type="password" name="password" formControlName="password">
+
+  <input type="submit" [disabled]="!signinForm.valid" value="Submit">
+</form> 

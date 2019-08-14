@@ -1,1 +1,127 @@
 /* You can add global styles to this file, and also import other style files */
+body {
+   font-family: Poppins;
+    margin: 0px;
+    padding: 0px;
+}
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    padding: 10px;
+    text-transform: lowercase;
+}
+
+nav ul {
+    padding: 0px;
+    margin: 0px;
+    list-style: none;
+}
+
+nav ul li {
+    display: inline-block;
+    margin: 0px 10px;
+}
+
+nav ul li a {
+    color: rgb(121, 121, 121);
+    text-decoration: none;
+}
+
+nav ul:last-of-type {
+    padding-right: 20px;
+}
+
+nav ul:first-of-type{
+    padding-left: 20px;
+}
+
+header {
+    position: relative;
+    height: 450px;
+}
+
+header div:first-of-type {
+    padding-left: 6%;
+}
+
+header h1 {
+    font-size: 7rem;
+    text-transform: uppercase;
+    position: absolute;
+    right: 10%;
+    line-height: 7rem;
+}
+
+header  div.image {
+  width: 50%;
+  height: 500px;
+  background: url("https://images.unsplash.com/photo-1535463861654-838685c8e158?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=634&q=80");
+  background-size: 100%;
+  position: absolute;
+  top: 0px;
+  z-index: -1;
+}
+
+main {
+    width: 90%;
+    margin: 50px auto;
+}
+
+form {
+  
+    width: 40%;
+    padding: 10px;
+    margin: 100px auto;
+   
+}
+
+form * {
+    display: block;
+  
+}
+form input {
+    padding: 10px 0px;
+    width: 100%;
+    background: none;
+    border: none;
+    border-bottom: 1px solid #777;
+    text-indent: 20px;
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+}
+
+form input[type="submit"]{
+    text-indent: 0px;
+    background: #ee9ca7;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #ffdde1, #ee9ca7);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #ffdde1, #ee9ca7); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    color: #fff;
+    width: 60%;
+    margin: 0 auto;
+    border-radius: 15px;
+    border: none;
+    -webkit-box-shadow: 0px 10px 12px 1px rgba(196,196,196,1);
+-moz-box-shadow: 0px 10px 12px 1px rgba(196,196,196,1);
+box-shadow: 0px 10px 12px 1px rgba(196,196,196,1);
+}
+
+form textarea {
+    text-indent: 20px;
+    font-family: Poppins;
+    width: 100%;
+    padding: 0px;
+    background: none;
+    height: 300px;
+    margin: 10px 0px;
+    resize: vertical;
+}
+
+li > button {
+    border: none;
+    background: none;
+    font-size: 16px;
+    padding: 5px;
+    color: rgb(175, 114, 0);
+    background: rgb(255, 253, 249);     
+}

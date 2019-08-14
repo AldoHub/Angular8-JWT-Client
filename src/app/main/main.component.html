@@ -1,0 +1,10 @@
+
+    <form (ngSubmit)="createPost(postForm.value)" [formGroup]="postForm">
+      <h2>Create A New Post.</h2>
+      <label for="title">Title:</label>
+      <input type="text" name="title" formControlName="title">
+    
+      <label for="content">Content:</label>
+      <textarea formControlName="content"></textarea>  
+      <input type="submit" [disabled]="!postForm.valid" value="Submit">
+    </form> 
